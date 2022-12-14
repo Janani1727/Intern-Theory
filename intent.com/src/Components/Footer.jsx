@@ -9,9 +9,6 @@ import {
    Divider,
     useColorModeValue,
     Center,
-    
-    
-   
   } from '@chakra-ui/react';
   import { React } from 'react';
   

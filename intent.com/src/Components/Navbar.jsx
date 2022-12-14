@@ -3,13 +3,10 @@ import Images from "../Images/Add.png"
 import {
   Box,
   Flex,
-  
   Button,
-  
   useColorModeValue,
   Stack,
   useColorMode,
-  
   Image
 } from '@chakra-ui/react';
 import { MoonIcon, SunIcon,HamburgerIcon } from '@chakra-ui/icons';
