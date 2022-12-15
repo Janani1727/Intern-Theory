@@ -8,14 +8,17 @@ import {
     Flex,
    Divider,
     useColorModeValue,
-    Center,
+    
   } from '@chakra-ui/react';
   import { React } from 'react';
   
 
   
   export default function Footer() {
+
     return (
+      <>
+ 
       <Box
         bg={useColorModeValue("#446478")}
         color={useColorModeValue('white')}>
@@ -32,7 +35,7 @@ import {
               <Link href={'#'}>Internships In Hyderabad</Link>
             </Stack>
             <Stack align={'flex-start'} >
-              {/* <ListHeader>Company</ListHeader> */}
+             
               <Link href={'#'}>BY PROFILE</Link>
               <Divider color="black"></Divider>
               <Link href={'#'}>Marketing Internships</Link>
@@ -45,7 +48,7 @@ import {
             </Stack>
 
             <Stack align={'flex-start'}>
-              {/* <ListHeader>Legal</ListHeader> */}
+             
               <Link href={'#'}>BY TYPE</Link>
               <Divider color="black"></Divider>
               <Link href={'#'}>Full Time Internships</Link>
@@ -78,15 +81,15 @@ import {
               content: '""',
               borderBottom: '1px solid',
               borderColor: useColorModeValue('gray.200', 'gray.700'),
-              flexGrow: 2,
-            //   mr: 8,
+              flexGrow: 1,
+              mr: 8,
             }}
             _after={{
               content: '""',
               borderBottom: '1px solid',
               borderColor: useColorModeValue('gray.200', 'gray.700'),
-              flexGrow: 2,
-            //   ml: 8,
+              flexGrow: 1,
+              ml: 8,
             }}>
             
           </Flex>
@@ -95,5 +98,11 @@ import {
           </Text>
         </Box>
       </Box>
+
+   
+
+
+      </>
     );
   }
+
