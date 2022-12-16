@@ -1,0 +1,275 @@
+{
+    "Internship": [
+        {
+            "id": 1,
+            "image": "https://assets.interntheory.com/creative/logo.png",
+            "title":"Develop Your Skillset",
+            "course": "Full Time Internship",
+            "type":"Marketing",
+            "place": "Banglore",
+            "stipend": "12000 per month"
+        },
+        {
+            "id": 2,
+            "image": "https://assets.interntheory.com/uploads/company/logos/348ebc3e1dc80c206c4ac8af46f90db576813b9d.jpg",
+            "title":"Digital Marketing Analyst",
+            "course": "Full Time Internship",
+            "type":"Digital Marketing",
+            "place": "Banglore",
+            "stipend": "15000 per month"
+        },
+        {
+            "id": 3,
+            "image": "Marketing Ambassador - Work from Home",
+            "title":"Laugh Out Loud Ventures",
+            "course": "Work From Home Internship",
+            "type":"Marketing",
+            "place": "Bangalore,Chennai,Delhi,Mumbai,Pune,Thane",
+            "stipend": "15000 per month"
+        },
+        {
+            "id": 4,
+            "image": "https://assets.interntheory.com/uploads/company/companylogos/c22171e9ccc3eaa1f43a19d86be801e0341c4999/2f0c5644573472744e5586f69fb778f0959edfd7com.jpg",
+            "title":"Content Writer",
+            "course": "J K Diamonds Institute of Gems & Jewelry",
+            "type":"Full Time Internship",
+            "place": "Mumbai",
+            "stipend": "15000 per month"
+        },
+        {
+            "id": 5,
+            "image": "https://assets.interntheory.com/uploads/company/logos/6efdff45626352708533d4a6021e909ca9c33925.jpg",
+            "title":"Psychology Intern",
+            "course": "EkakiVedam Foundation",
+            "type":"Full Time,Part Time,Work From Home Internship Psychology",
+            "place": "Gurgaon,Mumbai,Delhi,Lucknow,Haridwar",
+            "stipend": "10000 per month"
+        },
+        {
+            "id": 6,
+            "image": "https://assets.interntheory.com/uploads/company/logos/47bea5aaf51cca0ed55002de9cb2bc3c050d3243.jpg",
+            "title":"Business Development (online sales for IT)",
+            "course": "AfterFirst Media",
+            "type":"Full Time Internship",
+            "place": "Ahmedabad",
+            "stipend": "10000 per month"
+        },
+        {
+            "id": 7,
+            "image": "https://assets.interntheory.com/uploads/company/logos/47bea5aaf51cca0ed55002de9cb2bc3c050d3243.jpg",
+            "title":"Digital Marketing Interns needed",
+            "course": "AfterFirst Media",
+            "type":"Full Time Internship",
+            "place": "Ahmedabad",
+            "stipend": "10000 per month"
+        },
+        {
+            "id": 8,
+            "image": "https://assets.interntheory.com/uploads/company/logos/ffbfff5bac8dc226409e82cfa8227fac6006e342.jpg",
+            "title":"Social Media Intern",
+            "course": "GypsyMoth LLP",
+            "type":"Full Time Internship",
+            "place": "Mumbai",
+            "stipend": "10000 per month"
+        },
+        {
+            "id": 9,
+            "image": "https://assets.interntheory.com/uploads/company/logos/7b122f8459f847f0ae7c5a6f902a748944675bf9.jpg",
+            "title":"Content intern",
+            "course": "Global Supply Chain Group",
+            "type":"Full Time Internship",
+            "place": "Gurgaon",
+            "stipend": "10000 per month"
+        },
+        {
+            "id": 10,
+            "image": "https://assets.interntheory.com/uploads/company/logos/ce621fc8bc71e12c2356f869eb640cdee89ce235.jpg",
+            "title":"Digital Marketing Intern",
+            "course": "As Webworks",
+            "type":"Work From Home Internship",
+            "place": "Pune,Mumbai,Nashik,Bangalore,Delhi",
+            "stipend": "None"
+        },
+        {
+            "id": 11,
+            "image": "https://assets.interntheory.com/uploads/company/logos/c4b5507cf76626e428794195ca4ad5999913a027.jpg",
+            "title":"Graphic Intern",
+            "type":"Listed Fans",
+            "course": "Full Time Internship",
+            "place": "Delhi",
+            "stipend": "15000 per month"
+        }
+    ],
+
+    "Jobs":[
+        {
+            "id": 1,
+            "image": "https://assets.interntheory.com/creative/logo.png",
+            "title":"Develop Your Skillset",
+            "dept": "Online Skill Development Programs",
+            "type":"Taught by Industry Experts Internship",
+            "place": "Mumbai",
+            "salary": "20000 - 30000 per month"
+        },
+        {
+            "id": 2,
+            "image": "https://assets.interntheory.com/uploads/company/logos/80cb6be36ae3e043c81fb0270d75f12f1ccfe008.jpg",
+            "title":"Talent Acquisition Specialist",
+            "dept": "Intern Theory",
+            "type":"Human Resources",
+            "place": "Mumbai",
+            "salary": "25000 - 30000 per month"
+        },  {
+            "id": 3,
+            "image": "https://assets.interntheory.com/uploads/company/logos/bf3174743fe71c1e3028caabc90044f486d5bc7b.jpg",
+            "title":"marketing Manager",
+            "dept": "HomeCapital",
+            "type":"Marketing",
+            "place": "Mumbai",
+            "salary": "60000 - 80000 per month"
+        },  {
+            "id": 4,
+            "image": "https://assets.interntheory.com/uploads/company/logos/bf3174743fe71c1e3028caabc90044f486d5bc7b.jpg",
+            "title":"Senior Manager- Finance & Compliance",
+            "dept": "HomeCapital",
+            "type":"Finance",
+            "place": "Mumbai",
+            "salary": "Salary: 165000 - 200000 per month"
+        },  {
+            "id": 5,
+            "image": "https://assets.interntheory.com/uploads/company/logos/5e4aa4f62ecc23200708c5cf0d542f7ee1345362.jpg",
+            "title":"React JS Developer",
+            "dept": "arham labs",
+            "type":"Software Development",
+            "place": "Mumbai",
+            "salary": "30000 - 40000 per month"
+        },  {
+            "id": 6,
+            "image": "https://assets.interntheory.com/uploads/company/logos/0b27fd3c3939c9f43653b65a93cfc9fb85b9095d.jpg",
+            "title":"Graphic Designer",
+            "dept": "Post Card Media",
+            "type":"Graphic Designing",
+            "place": "Mumbai",
+            "salary": "30000 - 35000 per month"
+        }
+    ],
+
+    "online":[
+
+        
+            {
+                "id": 1,
+                "image": "https://assets.interntheory.com/creative/courses/thumbnails/it.jpg",
+                "title":"IT Starter Pack (4 Courses)",
+                "desc": "Learn the most demanded skills in the IT industry today. Sig ...",
+                "price": "₹ 15999",
+                "emi":"EMI Starting at ₹ 915/month "
+            },
+            
+            {
+                "id": 2,
+                "image": "https://assets.interntheory.com/creative/courses/thumbnails/digital-marketing-course.png",
+                "title":"Digital Marketing Course",
+                "desc": "Learn the art of digital marketing. Sign up for this online ... ",
+                "price": "₹ 5999",
+                "emi":"EMI Starting at ₹ 343/month "
+            },
+            
+            {
+                "id": 3,
+                "image": "https://assets.interntheory.com/creative/courses/thumbnails/data-analytics-r-programming-course.png",
+                "title":"Data Analytics With R Programming Course",
+                "desc": "Learn data science online. Join this online data analytics c ...",
+                "price": "₹ 5999",
+                "emi":"EMI Starting at ₹ 229/month "
+            },
+            
+            {
+                "id": 4,
+                "image": "https://assets.interntheory.com/creative/courses/thumbnails/web-development-course.png",
+                "title":"Web Development Course",
+                "desc": "Learn the art of android app design and web development. Joi ...",
+                "price": "₹ 3999",
+                "emi":"EMI Starting at ₹ 229/month "
+            },
+            
+            {
+                "id": 5,
+                "image": "https://assets.interntheory.com/creative/courses/thumbnails/tally-gst-course.png",
+                "title":"Tally + GST Course",
+                "desc": "Learn the art of web design and web development. Join this o ...",
+                "price": "₹ 3999",
+                "emi":"EMI Starting at ₹ 229/month "
+            },
+            
+            {
+                "id": 6,
+                "image": "https://assets.interntheory.com/creative/courses/thumbnails/android-app-development-kotlin-course.png",
+                "title":"Android App Development Using Kotlin Course ",
+                "desc": "Sign up for this online tally and gst course and learn how t ...",
+                "price": "₹ 3999",
+                "emi":"EMI Starting at ₹ 229/month "
+            },
+            
+            {
+                "id": 7,
+                "image": "https://assets.interntheory.com/creative/courses/thumbnails/advanced-excel-course.png",
+                "title":"Advanced Excel Course",
+                "desc": "Master MS Excel. Take the online ms excel course and learn t ...",
+                "price": "₹ 2999",
+                "emi":"EMI Starting at ₹ 229/month "
+            },
+            
+            {
+                "id": 8,
+                "image": "https://assets.interntheory.com/creative/courses/thumbnails/r-programming-course.png",
+                "title":"R Programming Course",
+                "desc": "Learn r programming online. Sign up for this online r progra ...",
+                "price": "₹ 2999",
+                "emi":"EMI Starting at ₹ 343/month "
+            }
+        
+    ],
+
+    "offline":[
+
+        {
+            "id": 1,
+            "image": "https://assets.interntheory.com/courses/banner/1573118304.png",
+            "title":"Offline Digital Marketing Course",
+            "desc": "Learn the art of digital marketing. Sign up for this offline ...",
+            "price": "₹ 9999",
+            "emi":"EMI Starting at ₹ 572/month "
+        },
+        
+        {
+            "id": 2,
+            "image": "https://assets.interntheory.com/courses/banner/1573120159.png",
+            "title":"Offline Stock Market Course",
+            "desc": "Learn how to trade and invest in stock markets. Enroll for t ... ",
+            "price": "₹ 9999",
+            "emi":"EMI Starting at ₹ 572/month "
+        },
+        
+        {
+            "id": 3,
+            "image": "https://assets.interntheory.com/courses/banner/1573120767.png",
+            "title":"Offline Tally + GST Course",
+            "desc": "Sign up for this offline tally and GST course and learn how ...",
+            "price": "₹ 7999",
+            "emi":"EMI Starting at ₹ 353/month "
+        },
+        
+        {
+            "id": 4,
+            "image": "https://assets.interntheory.com/courses/banner/1573120508.png",
+            "title":"Offline Advanced Excel Course",
+            "desc": "Master MS Excel. Take the offline ms excel course and learn ...",
+            "price": "₹ 5999",
+            "emi":"EMI Starting at ₹ 353/month"
+        }
+
+    ]
+
+
+}

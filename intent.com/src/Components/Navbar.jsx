@@ -9,7 +9,8 @@ import {
   useColorMode,
   Image
 } from '@chakra-ui/react';
-import { MoonIcon, SunIcon,HamburgerIcon } from '@chakra-ui/icons';
+import { MoonIcon, SunIcon } from '@chakra-ui/icons';
+import DrawerExample from "../Components/Sidebar"
 
 
 
@@ -23,8 +24,8 @@ export default function Nav() {
       <Box bg={useColorModeValue("white")} px={4}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
         <Flex>
-<HamburgerIcon color="black" mt={5} ml={5}  boxSize={10} />
-
+{/* <HamburgerIcon color="black" mt={5} ml={5}  boxSize={10} /> */}
+     <DrawerExample />
  <Image src={Images} h={20} ml={5} width={"100px"}/>
 </Flex>
              

@@ -7,12 +7,12 @@ import {
     Image,
     SimpleGrid,
     Box,
-    Avatar,
-    Divider,
-    ModalOverlay,
+    
+   
   } from '@chakra-ui/react';
-  
-  export default function BackgroundImage() {
+
+  import Caro from "../Components/carousel"
+  export default function Home() {
     return (
         <>
       <Flex
@@ -186,7 +186,7 @@ import {
         </div>
 
       </div>
-
+{/* 
 <Box  boxShadow='2xl' p='6' rounded='md' bg='white' width={"70%"} margin={"auto"}>
       <div style={{display:"flex" ,border:"0px solid gray",
     height:"120px"}}>
@@ -204,6 +204,9 @@ import {
        
       </div>
 
+      </Box> 
+
+      <Box  boxShadow='2xl' p='6' rounded='md' bg='white' width={"70%"} margin={"auto"}>
       <div style={{display:"flex" ,border:"0px solid gray",
     height:"120px"}}>
       
@@ -219,7 +222,8 @@ import {
         </div>
        
       </div>
-
+      </Box> 
+      <Box  boxShadow='2xl' p='6' rounded='md' bg='white' width={"70%"} margin={"auto"}>
       <div style={{display:"flex" ,border:"0px solid gray",
     height:"120px"}}>
       
@@ -235,11 +239,13 @@ import {
         </div>
        
       </div>
-      </Box>
+      </Box> */}
 
-      
+      <Caro />
+  
+
 </>
     );
   }
 
-  
+ 
