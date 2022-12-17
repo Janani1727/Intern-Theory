@@ -6,10 +6,10 @@ import {Avatar,Box,Divider} from "@chakra-ui/react"
 
 function Caro() {
   return (
-    <div style={{marginBottom:"70px",height:"250px", backgroundColor:"#e4e2e3"}}>
-    <Carousel>
-      <Carousel.Item interval={1700}>
-      <Box  marginTop={10} boxShadow='base' p='6'border="1px solid gray" rounded='md' bg='white' width={"70%"} margin={"auto"}>
+    <div style={{height:"250px", backgroundColor:"#e4e2e3" , paddingTop:"40px" }} >
+    <Carousel >
+      <Carousel.Item interval={1700 } >
+      <Box  mt={10} boxShadow='base' pt='6' border="1px solid gray" rounded='md' bg='white' width={"70%"} margin={"auto"}>
       <div style={{display:"flex" ,border:"0px solid gray",
     height:"120px"}}>
       

@@ -21,7 +21,7 @@ export default function Nav() {
   
   return (
     <>
-      <Box bg={useColorModeValue("white")} px={4}>
+      <Box bg={useColorModeValue("white") } px={4}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
         <Flex>
 {/* <HamburgerIcon color="black" mt={5} ml={5}  boxSize={10} /> */}

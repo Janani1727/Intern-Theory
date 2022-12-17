@@ -112,7 +112,7 @@
             "salary": "20000 - 30000 per month"
         },
         {
-            "id": 2,
+            "id": 12,
             "image": "https://assets.interntheory.com/uploads/company/logos/80cb6be36ae3e043c81fb0270d75f12f1ccfe008.jpg",
             "title":"Talent Acquisition Specialist",
             "dept": "Intern Theory",
@@ -273,3 +273,4 @@
 
 
 }
+
