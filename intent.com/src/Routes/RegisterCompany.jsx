@@ -1,13 +1,12 @@
 import React from "react"
 import {
-    Modal,
-    ModalOverlay,
-    ModalContent,
-    ModalHeader,
-    ModalFooter,
-    ModalBody,
   
-    useDisclosure,
+   
+ 
+    Checkbox,
+    Stack,
+    Link,
+ useColorModeValue,
     Box,
     Center,
     Text,
@@ -24,16 +23,14 @@ import {
 import { SiLinkedin,  } from 'react-icons/si';
 
 export default function RegisterCompany() {
-    const { isOpen, onOpen, onClose } = useDisclosure()
-    const finalRef = React.useRef(null)
-
+   
     return (
 
 
         <>
         <Box
          w={'full'}
-         h={'90vh'}
+         h={'100vh'}
          backgroundImage={
            'url(https://assets.interntheory.com/creative/Web-Banner.jpg)'
          }
@@ -41,14 +38,14 @@ export default function RegisterCompany() {
          backgroundPosition={'center center'}>
         
         <div style={{}} >
-        <Heading marginRight={"800px"} >17163 Companies</Heading>
-        <h1 style={{marginLeft:"-700px"}}> Trust Us With Their Intern Requirements Wouldn't You?</h1>
+        <Heading marginRight={"700px"} >17163 Companies</Heading>
+        <h1 style={{marginLeft:"-700px" ,marginTop:"10px",fontSize:"20px"}}> Trust Us With Their Intern Requirements Wouldn't You?</h1>
         
         </div>
         
             <Flex>
                 
-                <SimpleGrid width={"40%"} columns={[4, null, 4]} spacing='20px' mt={"70px"} py={10} ml={"110px"}>
+                <SimpleGrid width={"40%"} columns={[4, null, 4]} spacing='-10px' mt={"10px"} py={10} ml={"110px"}>
                     <Image src='https://assets.interntheory.com/creative/home-logo-colored/logo-1.png'></Image>
                     <Image src='https://assets.interntheory.com/creative/home-logo-colored/logo-2.png'></Image>
                     <Image src='https://assets.interntheory.com/creative/home-logo-colored/logo-3.png'></Image>
@@ -77,49 +74,75 @@ export default function RegisterCompany() {
 
 
 
-                {/* <Box ref={finalRef} tabIndex={-1} aria-label='Focus moved to this box'>
-                  Some other content that'll receive focus on close.
-                </Box> */}
-                {/* <Box width={"100%"}> */}
-                <Button mt={4} onClick={onOpen}>
-                    Open Modal
-                </Button>
-                <Modal finalFocusRef={finalRef} isOpen={isOpen} onClose={onClose}>
-                    <ModalOverlay />
-                    <ModalContent>
-                        <ModalHeader>Start Hiring Interns</ModalHeader>
-                        {/* <ModalCloseButton /> */}
-                        <p style={{ marginLeft: "25px" }}>Already have an account?</p>
-                        <div style={{ border: "1px dashed red", backgroundColor: "#fceff1", width: "90%", margin: "auto" }}>
-                            <p>If you are a student looking for internships, please register as a student by clicking here.</p>
-                        </div>
-                        <ModalBody>
-                            <Button w={'full'} colorScheme={'messenger'} leftIcon={<SiLinkedin />}>
-                                <Center>
-                                    <Text>Send to Linkedin</Text>
-                                </Center>
-                            </Button>
-                            <p style={{ textAlign: "center" }}>OR</p>
-                            <Flex >
-                                <Input marginRight={"10px"} marginTop={4} variant='flushed' placeholder='First Name' />
-                                <Input marginLeft={"10px"} marginTop={4} variant='flushed' placeholder='Last Name' />
-                            </Flex>
+           
 
-                            <Input marginTop={8} variant='flushed' placeholder='Comapany Name *' />
-                            <Input marginTop={8} variant='flushed' placeholder='Mobile Number*' />
-                            <Input marginTop={8} variant='flushed' placeholder=' Email (Please use a corporate email only)*' />
-                            <Input marginTop={8} variant='flushed' placeholder='Password*' />
-                            <Input marginTop={8} variant='flushed' placeholder='How Did You Find Us*' />
-                        </ModalBody>
 
-                        <ModalFooter>
-                            <Button w={'full'} border={"1px solid red"} backgroundColor={"white"} color={"red"} onClick={onClose}>
-                                Proceed to Posting Internship
-                            </Button>
+<Flex
+             
+             minH={'80vh'}
+             align={'center'}
+             justify={'center'}
+             marginTop={"-100px"}
+            >
+             <Stack spacing={8} mx={'auto'} maxW={'xl'} py={12} px={6}>
+             
+               <Box
+                 rounded={'lg'}
+                 bg={useColorModeValue('white', 'gray.700')}
+                 boxShadow={'dark-lg'}
+                 width={"100%"}
+                 marginInlineStart={"-492px"}
+                 marginLeft={"10px"}
+                 p={8}>
+                       <Stack align={'center'} >
+                     <Box marginLeft={"-200px"} textAlign={"left"}>
+                     <Heading fontSize={'3xl'} fontWeight={"500"} marginBottom={"10px"} >Start Hiring Interns</Heading>
+                 <p fontSize={'lg'} color={'gray.600'}   >
+                 Already have an account?<Link color={'blue.400'}>Sign in</Link> 
+                 </p>
+                     </Box>
+                 
+                 <div style={{ textAlign:"left",border: "1px dashed red",marginTop:"8px" ,backgroundColor: "#fceff1", width: "100%"}}>
+              <p style={{textAlign:"left"}}>If you are a student looking for internships, please register as a student by clicking here</p>
+          </div>
+               </Stack>
+               <Button w={'full'} colorScheme={'messenger'} leftIcon={<SiLinkedin />} marginTop={"8px"} >
+          <Center>
+            <Text>Register With LinkedIn</Text>
+          </Center>
+        </Button>
+                        
+                 <Stack spacing={4}>
+     
+                     {/* <FormLabel>Email address</FormLabel> */}
+                     <Flex >
+                        <Input marginRight={"10px"} marginTop={8} variant='flushed' placeholder='First Name' />
+                      <Input marginLeft={"10px"} marginTop={8} variant='flushed' placeholder='Last Name' />
+                        </Flex>
+                        <Input   marginTop={8} variant='flushed' placeholder='Company Name*' />
+                      <Input  marginTop={8} variant='flushed' placeholder='Mobile Number*' />
+                      <Input   marginTop={8} variant='flushed' placeholder='Email(Please use a corporate Email only)' />
+                      <Input  marginTop={8} variant='flushed' placeholder='Password' />
+                      <Input   marginTop={8} variant='flushed' placeholder='How Did You Find Us?*' />
+                     
+                   
+                   <Stack spacing={10}>
+                     <Button
+                       border={"1px solid red"}
+                       color={'red'}
+                       bg={'white'} 
+                       _hover={{
+                         bg: 'red.100',
+                       }}>
+                    PROCEED TO POSTING INTERNSHIP
+                     </Button>
+                   </Stack>
+                 </Stack>
+               </Box>
+             </Stack>
+           </Flex>
 
-                        </ModalFooter>
-                    </ModalContent>
-                </Modal>
+                
             </Flex>
             </Box>
             {/* </Box> */}

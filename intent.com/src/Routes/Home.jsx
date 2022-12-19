@@ -7,6 +7,7 @@ import {
     Image,
     SimpleGrid,
     Box,
+    Input
     
    
   } from '@chakra-ui/react';
@@ -22,12 +23,16 @@ import {
           'url(https://assets.interntheory.com/creative/Homepage-Banner.png)'
         }
         backgroundSize={'cover'}
-        backgroundPosition={'center center'}>
+        // backgroundPosition={'center center'}
+        // opacity={"0.6"}
+        backgroundColor={"rgb(68, 100, 120)"}
+       >
+    
         <VStack
           w={'full'}
           justify={'center'}
           px={useBreakpointValue({ base: 4, md: 8 })}
-          bgGradient={'linear(to-r, blackAlpha.600, transparent)'}>
+          bgGradient={'linear(to-r, blackAlpha.600, blur)'}>
           <Stack maxW={'2xl'} align={'flex-start'} spacing={6}>
             <Text
               color={'white'}
@@ -48,6 +53,15 @@ import {
            The One Stop to Upgrade Your Resume. Expand Your Skillset. Do An Internship. Get Placed
               
             </Text>
+
+            <div  style={{display:"flex",marginBottom:"50px", height:"80px",width:"100%",boxShadow:"dark-lg"}}>
+        <Input  marginLeft={"120px"} marginTop={"10px"} width={"18%"} variant='flushed' placeholder='Cities..' />
+        <Input marginLeft={"20px"} marginTop={"10px"}  width={"18%"} variant='flushed' placeholder='Type..' />
+        <Input  marginLeft={"20px"}  marginTop={"10px"}width={"18%"} variant='flushed' placeholder='Preferences..' />
+        <p style={{marginLeft:"10px",marginTop:"25px"}}> OR</p>
+        <Input  marginLeft={"10px"}marginTop={"10px"} width={"18%"} variant='flushed' placeholder='Search..' />  
+        <button style={{marginTop:"10px",height:"40px", color:"white",width:"100px",border:"#087cdd",backgroundColor:"#087cdd",borderRadius:"5px"}}>Search</button>
+ </div>
             
           </Stack>
         </VStack>
@@ -63,14 +77,14 @@ import {
         <div style={{
         // border:"1px solid red",
         width:"50%",margin:"auto",
-        marginLeft:"50px"
+        marginLeft:"10px"
     }}>
         <div style={{display:"flex",
-                fontSize:"30px" ,
-                fontWeight:"600" 
+                fontSize:"32px" ,
+                fontWeight:"500" 
     }}>
         <h1>PLETHORA OF OPPORTUNITIES </h1>
-        <h1 style={{color:"red", marginLeft:"12px"}}>FOR YOU</h1>
+        <h1 style={{color:"red", marginLeft:"18px"}}>FOR YOU</h1>
         </div>
         <div style={{border:"0.5px solid #A0AEC0",width:"600px",backgroundColor:"gray"}}></div>
         <div style={{width:"690px"}}>

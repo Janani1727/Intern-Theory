@@ -1,88 +1,93 @@
 import React from "react"
 import {
-    Modal,
-    ModalOverlay,
-    ModalContent,
-    ModalHeader,
-    ModalFooter,
-    ModalBody,
-    ModalCloseButton,
-    useDisclosure,
+    Flex,
     Box,
+    FormControl,
     Center,
-    Text,
-    Button,
     Input,
-    Flex
-
+    Checkbox,
+    Stack,
+    Link,
+    Button,
+    Heading,
+    Text,
+    useColorModeValue,
 
 } from '@chakra-ui/react'
-
-import { FaFacebook } from 'react-icons/fa';
-import { FcGoogle } from 'react-icons/fc';
+import {  SiLinkedin } from 'react-icons/si';
 
 export default function LoginCompany() {
-    const { isOpen, onOpen, onClose } = useDisclosure()
-    const finalRef = React.useRef(null)
-
+   
     return (
 
 
         <>
-            {/* <Box ref={finalRef} tabIndex={-1} aria-label='Focus moved to this box'>
-                  Some other content that'll receive focus on close.
-                </Box> */}
-              {/* <Box width={"100%"}> */}
-            <Button mt={4} onClick={onOpen}>
-                Open Modal
-            </Button>
-            <Modal finalFocusRef={finalRef} isOpen={isOpen} onClose={onClose}>
-                <ModalOverlay />
-                <ModalContent>
-                    <ModalHeader>Register Candidate</ModalHeader>
-                    {/* <ModalCloseButton /> */}
-                    <p style={{ marginLeft: "25px" }}>Already have an account?</p>
-                    <div style={{ border: "1px dashed red", backgroundColor: "#fceff1", width: "90%", margin: "auto" }}>
-                        <p>If you are a company looking to hire interns, please register as a company by clicking here</p>
-                    </div>
-                    <ModalBody>
-                        <Button w={'full'} colorScheme={'facebook'} >
-                            <div style={{  borderRadius: "5px" }}>
-                                <FaFacebook />
-                            </div>
-                            <Center>
-                                <Text>Register with Facebook</Text>
-                            </Center>
-                        </Button>
-
-                        {/* Google */}
-                        <Button backgroundColor={"#087cdd"}color={"white"} w={'full'} marginTop={"10px"}>
-                            <div style={{ backgroundColor: "white", borderRadius: "5px" }}>
-                                <FcGoogle />
-                            </div>
-                            <Center>
-                                <Text>Register with Google</Text>
-                            </Center>
-                        </Button>
-                   
-                   <Flex >
-                   <Input marginRight={"10px"} marginTop={8} variant='flushed' placeholder='First Name*' />
-                 <Input marginLeft={"10px"} marginTop={8} variant='flushed' placeholder='Last Name*' />
-                   </Flex>
-               
-                 <Input   marginTop={8} variant='flushed' placeholder='Email*' />
-                 <Input  marginTop={8} variant='flushed' placeholder='Password*' />
-                    </ModalBody>
-
-                    <ModalFooter>
-                        <Button  w={'full'} border={"1px solid red"} backgroundColor={"white"} onClick={onClose}>
-                            Next
-                        </Button>
+              <Flex
+             
+             minH={'80vh'}
+             align={'center'}
+             justify={'center'}
+            >
+             <Stack spacing={8} mx={'auto'} maxW={'xl'} py={12} px={6}>
+             
+               <Box
+                 rounded={'lg'}
+                 bg={useColorModeValue('white', 'gray.700')}
+                 boxShadow={'dark-lg'}
+                 width={"100%"}
+                
+                 marginLeft={"10px"}
+                 p={8}>
+                       <Stack align={'center'}>
+                     
+                 <Heading fontSize={'4xl'}marginLeft={"-366px"}>Login</Heading>
+                 
+                 <div style={{ textAlign:"left",border: "1px dashed red",marginTop:"8px" ,backgroundColor: "#fceff1", width: "100%"}}>
+              <p style={{textAlign:"left"}}>If you are a company looking to hire interns, please register as a company by clicking here</p>
+          </div>
+               </Stack>
+               <Button w={'full'} colorScheme={'messenger'} leftIcon={<SiLinkedin />} marginTop={"8px"} >
+          <Center>
+            <Text>Register With LinkedIn</Text>
+          </Center>
+        </Button>
                         
-                    </ModalFooter>
-                </ModalContent>
-            </Modal>
-            {/* </Box> */}
+                 <Stack spacing={4}>
+                   <FormControl id="email">
+                     {/* <FormLabel>Email address</FormLabel> */}
+                     {/* <Flex >
+                        <Input marginRight={"10px"} marginTop={8} variant='flushed' placeholder='First Name*' />
+                      <Input marginLeft={"10px"} marginTop={8} variant='flushed' placeholder='Last Name*' />
+                        </Flex> */}
+                        <Input   marginTop={8} variant='flushed' placeholder='Email/Number*' />
+                      <Input  marginTop={8} variant='flushed' placeholder='Password*' />
+                   </FormControl>
+                   
+                   <Stack spacing={10}>
+                     <Stack
+                       direction={{ base: 'column', sm: 'row' }}
+                       align={'start'}
+                       justify={'space-between'}>
+                       <Checkbox>Remember me</Checkbox>
+                       <Link color={'blue.400'}>Forgot password?</Link>
+                     </Stack>
+                     <Text fontSize={'lg'} color={'gray.600'}>
+                 Don't have an account?<Link color={'blue.400'}>Create Your Account</Link> 
+                 </Text>
+                     <Button
+                       border={"1px solid red"}
+                       color={'red'}
+                       bg={'white'} 
+                       _hover={{
+                         bg: 'red.100',
+                       }}>
+                       LOGIN
+                     </Button>
+                   </Stack>
+                 </Stack>
+               </Box>
+             </Stack>
+           </Flex>
         </>
 
 

@@ -1,6 +1,7 @@
 import { Heading, Input} from "@chakra-ui/react"
 import { Button } from "react-bootstrap"
 import { FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa"
+import "../styles/contact.css"
 export default function Contact(){
     return(
     
@@ -16,14 +17,15 @@ export default function Contact(){
                  <Input  marginTop={8} variant='flushed' placeholder='Message' />
             <button style={{width:"100px",color:"white", height:"0px",backgroundColor:"#df1e2e", borderRadius:"10px" ,marginTop:"20px"}}>submit</button>
         </div>
-        <div style={{width:"50%",border:"1px solid red"}}>
+        <div style={{width:"50%",marginLeft:"20px"}}>
 
-        <div >
-            {/* <div >
-                <iframe  style={{width:"100%",height:"200%",frameborder:"0", scrolling:"no", marginheight:"0" ,marginwidth:"0"}} src="https://maps.google.com/maps?q=india&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                    ></iframe>
-            </div> */}
+        <div class="mapouter">
+            <div class="gmap_canvas">
+                <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=india&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
         </div>
+
 
         </div>
         </div>
