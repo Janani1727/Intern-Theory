@@ -21,10 +21,25 @@ const fetchdata=()=>{
   return axios.get(`http://localhost:3000/offline`);
 }
 
-
 export default function Offline(){
 
   const [data,setData]=useState([])
+  const[cart,setCart]=useState([])
+
+  const HandleCart=(id)=>{
+    console.log(id)
+    let cartItem=data.find((e)=> {
+      return e.id === id
+    })
+    console.log("cartItem",cartItem)
+  
+  
+      axios.post(`http://localhost:3000/cart`,cartItem)
+      .then((response) => {
+          setCart(response.data)
+       console.log("response",response.data)
+      })
+  };
   
   useEffect(()=>{
     fetchdata().then((res)=>setData(res.data))
@@ -74,7 +89,7 @@ export default function Offline(){
               KNOW MORE
             </Button>
             <RouterLink to="/cart">
-            <Button textAlign={"right"} variant='solid' colorScheme='red'>
+            <Button textAlign={"right"} variant='solid' colorScheme='red' onClick={()=>HandleCart(e.id)}>
               ADD TO CART
             </Button>
             </RouterLink>

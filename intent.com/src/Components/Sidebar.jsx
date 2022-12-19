@@ -110,7 +110,6 @@ const regcompstud=(e)=>{
                
                   <option  value='offline'>Classroom Training</option>
              
-                 
                 </Select>
                 </div>
               </Flex>

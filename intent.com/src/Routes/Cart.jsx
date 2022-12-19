@@ -1,95 +1,129 @@
-import {FaTimesCircle} from "react-icons/fa"
-// import { Box, Image} from "@chakra-ui/react"
+import { FaTimesCircle } from "react-icons/fa"
 
-import { Box,Text,Card,Image,Stack,Heading,Button, CardBody, CardFooter } from '@chakra-ui/react'
+
+import { Box, Text, Card, Image, Stack, Heading, Button, CardBody, CardFooter, Flex, background } from '@chakra-ui/react'
 import { Link as RouterLink } from "react-router-dom"
-export default function Cart({image,title,price}){
+import axios from "axios";
+import { useEffect, useState } from "react"
 
-    //  const {id}=useParams();
-    //   console.log(id);
-     
+const fetchdata = () => {
 
-    return(
-        <>
-        <div >
-        <div style={{display:"flex",boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",width:"80%",margin:"auto"}}>
-
-        <Box color={"red"}  width={"50px"} height={"50px"} padding={2.5} borderRadius={"50%"} marginLeft={"5px"}
-          _hover={{
-            backgroundColor:"gray.300"
-          }}
-          fontSize={"30px"}
-        >
-        <FaTimesCircle  />
-        </Box>
-
-        <Card
-  direction={{ base: 'column', sm: 'row' }}
-//   overflow='hidden'
-//   variant='outline'
->
-  <Image
-    // objectFit='cover'
-    maxW={{  sm: '200px' }}
-    height={"70px"}
-    width={"150px"}
-    src='https://assets.interntheory.com/creative/courses/thumbnails/it.jpg'
-    alt='Caffe Latte'
-  />
-
-  <Stack>
-    <CardBody marginLeft={"-350px"}>
-      <Heading size='md'>IT Starter Pack (4 Courses)</Heading>
-      <Text>
-        ₹ 15999
-        </Text>
-    </CardBody>
-        
-     
-  <div style={{border:"0.2px dashed gray",width:"130%",marginLeft:"-150px"}}></div> 
-
-    <CardFooter>
-      <Button marginLeft={"300px"} variant='solid' colorScheme='red'>
-     EMPTY CART
-      </Button>
-      
-      <RouterLink to="/checkout">
-      <Button marginLeft={"10px"} variant='solid' colorScheme='red'>
-     CHECKOUT
-      </Button>
-      </RouterLink>
-      {/* <div style={{border:"0.2px solid gray",marginLeft:"200px",height:"300px",marginTop:"-100px"}}></div>  */}
-      
-      
-    </CardFooter>
-   
-   
-  </Stack>
-  {/* <Flex >
-        <div>Amount</div>
-        <div>₹ 5999</div>
-      </Flex>
-      <div style={{border:"0.2px solid gray"}}></div>
-      <Flex>
-        <div>CGST 9%</div>
-        <div>₹ 540 </div>
-      </Flex>
-       <Flex>
-        <div>SGST 9%</div>
-        <div>₹ 540</div>
-      </Flex> */}
-</Card>
-</div>
-{/* <div style={{border:"0.2px solid gray",marginLeft:"400px"}}></div> */}
-{/* <Input   marginTop={8} variant='flushed' placeholder='' />
-  <Input  marginTop={8} variant='flushed' placeholder='' /> */}
-        
-        {/* <div style={{border:"0.2px dashed gray",width:"80%",margin:"auto"}}></div> */}
-        </div>
-        </>
-    )
+  return axios.get(`http://localhost:3000/cart`);
 }
 
-<Text>
-EMI Starting at ₹ 915 /month
-</Text>
+
+const Handledel=(id)=>{
+  console.log(id)
+ 
+
+
+    axios.delete(` http://localhost:3000/cart/${id}`)
+    .then((response) => {
+      
+     console.log("response",response.data)
+
+     window.location.reload(true)
+    })
+};
+// http://localhost:3000/cart/${id}
+
+const empcart=(e)=>{
+  axios.delete(` http://localhost:3000/cart`)
+    .then((response) => {
+      
+     console.log("response",response.data)
+
+    //  window.location.reload(true)
+    })
+}
+
+export default function Cart(e) {
+
+  const [data, setData] = useState([])
+
+  useEffect(() => {
+    fetchdata().then((res) => setData(res.data))
+
+  }, [])
+  console.log(data)
+
+  return (
+    <div style={{ border: "1px solid black", backgroundColor: "#f8f8f8 ", marginBottom: "100px",margin: "auto", }}>
+      <>
+        <div style={{ border: "0px solid red", height: "auto", width: "65%", margin: "auto", boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px" }}>
+          {data.map((e) => (
+            <>
+              <div style={{ border: "0px solid black", display: "flex", height: "130px", width: "100%" }}>
+                <div style={{ border: "0px solid red", width: "100%", display: "flex" }}>
+                  <Box color={"#df1e2e "} width={"50px"} height={"50px"} padding={2.5} borderRadius={"50%"} marginLeft={"5px"} marginTop={"15px"}
+                    _hover={{
+                      backgroundColor: "gray.300"
+                    }}
+                    fontSize={"30px"}
+
+                    onClick={()=>Handledel(e.id)}
+                  >
+                    <FaTimesCircle />
+                  </Box>
+
+                  <img src={e.image} style={{ width: "150px", height: "70px", marginLeft: "20px", marginTop: "15px" }} alt="" />
+
+                  <Text fontSize={"20px"} marginLeft={"18px"} marginTop={"15px"} fontWeight={"bold"}>{e.title}</Text>
+                  <Text fontSize={"16px"} marginLeft={"318px"} textDecorationLine={"line-through"} marginTop={"35px"}>₹ 50000</Text>
+
+                  <Text    fontSize={"18px"} fontWeight={"bold"} marginTop={"35px"}>{e.price}</Text>
+                      
+                      {/* <Button    onClick={()=>empcart(e.id)}>del</Button> */}
+
+                </div>
+
+              </div>
+
+
+              <div style={{ border: "0.2px dashed grey" }}></div>
+
+
+
+            </>
+
+          ))}
+           
+            <Flex ml={"700px"} fontSize={"16px"}  gap={"100px"} mt={"10px"}>
+            <Text > Amount</Text>
+           <Text>{e.price}</Text>
+            </Flex>
+            <div style={{ border: "0.2px solid grey",width:"300px",marginLeft:"690px" }}></div>
+            
+            
+            <Flex ml={"700px"}  fontSize={"16px"}  gap={"100px"} mt={"10px"}>
+            <Text>SGST 9%</Text>
+           <Text>₹ 1710</Text>
+            </Flex>
+            {/* <div style={{ border: "0.2px dashed grey" }}></div> */}
+            <div style={{ border: "0.2px solid grey",width:"300px",marginLeft:"690px" }}></div>
+
+
+
+          <Flex gap={"20px"} ml={"700px"} mt={"10px"}>
+               <RouterLink to={'/Checkout'}>
+            <Button backgroundColor={"#df1e2e"} color={"white"}
+              _hover={{
+                bg: 'red.700',
+              }}
+            >CHECKOUT</Button>
+            </RouterLink>
+            <Button backgroundColor={"#df1e2e"} color={"white"}
+              _hover={{
+                bg: 'red.700',
+              }}
+              // onClick={()=>empcart(e.id)}
+
+            >EMPTY CART</Button>
+          </Flex>
+        </div>
+      </>
+    </div>
+  )
+
+}
+
