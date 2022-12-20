@@ -81,17 +81,20 @@ export default function Cart(e) {
 
 
               <div style={{ border: "0.2px dashed grey" }}></div>
-
+              <Flex ml={"700px"} fontSize={"16px"}  gap={"100px"} mt={"10px"}>
+            <Text > Amount</Text>
+           <Text>{e.price}</Text>
+            </Flex>
 
 
             </>
 
           ))}
            
-            <Flex ml={"700px"} fontSize={"16px"}  gap={"100px"} mt={"10px"}>
+            {/* <Flex ml={"700px"} fontSize={"16px"}  gap={"100px"} mt={"10px"}>
             <Text > Amount</Text>
            <Text>{e.price}</Text>
-            </Flex>
+            </Flex> */}
             <div style={{ border: "0.2px solid grey",width:"300px",marginLeft:"690px" }}></div>
             
             

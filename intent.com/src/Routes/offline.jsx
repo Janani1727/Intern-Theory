@@ -5,16 +5,15 @@ import {Image,
   Text,
   Heading,
   Stack,
-  Divider,
-  CardFooter,
+  
   Button,
   ButtonGroup,
-  Grid
+
  
    } from "@chakra-ui/react"
    import { Link as RouterLink } from "react-router-dom"
 import axios from "axios"
-import Cart from "../Routes/Cart"
+
 import { useEffect, useState } from "react"
 const fetchdata=()=>{
 

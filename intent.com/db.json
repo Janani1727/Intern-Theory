@@ -292,28 +292,12 @@
   ],
   "cart": [
     {
-      "id": 19,
-      "image": "https://assets.interntheory.com/creative/courses/thumbnails/digital-marketing-course.png",
-      "title": "Digital Marketing Course",
-      "desc": "Learn the art of digital marketing. Sign up for this online ... ",
-      "price": "₹ 5999",
-      "emi": "EMI Starting at ₹ 343/month "
-    },
-    {
-      "id": 23,
-      "image": "https://assets.interntheory.com/creative/courses/thumbnails/android-app-development-kotlin-course.png",
-      "title": "Android App Development  ",
-      "desc": "Sign up for this online tally and gst course and learn how t ...",
-      "price": "₹ 3999",
-      "emi": "EMI Starting at ₹ 229/month "
-    },
-    {
-      "id": 21,
-      "image": "https://assets.interntheory.com/creative/courses/thumbnails/web-development-course.png",
-      "title": "Web Development Course",
-      "desc": "Learn the art of android app design and web development. Joi ...",
-      "price": "₹ 3999",
-      "emi": "EMI Starting at ₹ 229/month "
+      "id": 18,
+      "image": "https://assets.interntheory.com/creative/courses/thumbnails/it.jpg",
+      "title": "IT Starter Pack (4 Courses)",
+      "desc": "Learn the most demanded skills in the IT industry today. Sig ...",
+      "price": "₹ 15999",
+      "emi": "EMI Starting at ₹ 915/month "
     }
   ]
 }

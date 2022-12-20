@@ -11,6 +11,7 @@ import LoginStudent from "./LoginStudent"
 import LoginCompany from "./LoginCompany";
 import Cart from "./Cart"
 import Checkout from "./Checkout"
+import Thank from "./thankyou"
 
 
 
@@ -27,7 +28,7 @@ export default function AllRoutes(){
     <Route  path="/registercompany" element={<RegisterCompany/>}/>
     <Route  path="/logincompany" element={<LoginCompany/>}/>
     <Route  path="/loginstudent" element={<LoginStudent/>}/>
-    
+    <Route path="/thankyou" element={<Thank/>}/>
     <Route  path="/Cart" element={<Cart/>}/>
     <Route  path="/checkout" element={<Checkout/>}/>
  </Routes>
